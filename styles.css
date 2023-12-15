@@ -1,0 +1,206 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+}
+
+/* Collapsible Styles */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 28px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:hover,
+.active {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+/* Login Form Styles */
+/* #login-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+} */
+
+#login-container {
+  width: 300%; /* Adjust the width as needed */
+  margin: 150px auto; /* Top & bottom margin and auto for horizontal centering */
+  padding: 40px; /* Adjust the padding for internal spacing */
+  max-width: 800px; /* Set a maximum width for larger screens */
+  background-color: white; /* Optional: background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adding some shadow for depth */
+  border-radius: 18px; /* Optional: rounded corners */
+}
+
+#login-form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: left;
+}
+
+/* #login-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+} */
+
+#login-form input[type="text"] {
+  width: 100%; /* Reduced width */
+  padding: 8px; /* Reduced padding for a smaller overall size */
+  font-size: 14px; /* Adjust font size if necessary */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: auto; /* Center the text box if the width is less than 100% */
+  display: flex; /* Ensure the input takes its own line */
+}
+
+#login-form button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px; /* Added margin for spacing */
+}
+
+#login-form button:hover {
+  background-color: #004494;
+}
+
+#hint-text {
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* Night Mode Styles */
+body.night-mode {
+  background-color: #333;
+  color: white;
+}
+
+.night-mode .collapsible,
+.night-mode .content {
+  color: black;
+}
+
+/* Presentation and Monthly Toggle Styles */
+#presentation-container,
+#month-toggles {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.month-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.month-btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  /* #login-container {
+    width: 180%;
+    margin: 20px auto;
+    padding: 15px;
+  } */
+
+  #login-form input[type="text"],
+  #login-form button {
+    font-size: 14px;
+  }
+
+  #theme-toggle {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+#question-label {
+  font-size: 15px; /* Increase the font size as needed */
+  /* You can add more styling properties if needed */
+}
+
+/* Night Mode Specific Styles */
+body.night-mode #login-container {
+  color: black; /* Change text color to black in night mode */
+  background-color: #f1f1f1; /* Optional: adjust background color if needed */
+}
+
+body.night-mode #login-container label,
+body.night-mode #login-container input[type="text"],
+body.night-mode #login-container button {
+  color: black; /* Ensures all text inside the container is black */
+  /* Additional styles for input and button if needed */
+}

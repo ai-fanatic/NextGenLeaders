@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Next Gen Leaders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Next Gen Leaders</h1>
+      <h2>Ashling Partners</h2>
+    </div>
+    <div id="login-container">
+      <form id="login-form">
+        <h2>Please answer the following question to access the content:</h2>
+        <label id="question-label"></label>
+        <input type="text" id="answer-input" />
+        <button type="submit">Submit</button>
+        <p id="hint-text"></p>
+      </form>
+    </div>
+    <div id="theme-toggle" onclick="toggleTheme()">
+      <span id="theme-icon">🌞</span>
+    </div>
+    <div class="background-image"></div>
+    <!-- Add this at the end of login.html -->
+    <script src="login.js"></script>
+  </body>
+</html>
