@@ -1,18 +1,18 @@
 const questions = [
   {
-    question: "When is the Next Gen Leader Session conducted?",
+    question: "What day of the week the Next Gen Leader Session conducted?",
     answer: "Friday",
     hint: "🤔Hint: It's a day where the previous weekly Ashling meeting of the week.",
   },
   {
-    question: "What the start meeting time for Next Gen leader session?",
+    question: "At what time the meeting started?",
     answer: "8AM CST",
     hint: "🤔Hint: Early in the morning, Central Standard Time.",
   },
   {
     question: "Is the final session conducted in 2023?",
     answer: "No",
-    hint: "🤔Hint: Think about the year.",
+    hint: "🤔Hint: Answer Yes or No.",
   },
 ];
 
