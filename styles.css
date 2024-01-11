@@ -11,6 +11,8 @@ body {
 /* Header Styles */
 .header {
   text-align: center;
+  font-family: "Noto Sans Devanagari", sans-serif;
+  font-size: 25px;
 }
 
 /* Collapsible Styles */
@@ -292,4 +294,71 @@ th {
 body.night-mode th {
   background-color: #333333; /* Darker background for headers */
   color: #ffffff; /* Light text color */
+}
+
+#company-logo {
+  width: 200px; /* Adjust as needed */
+  height: auto; /* Keeps the aspect ratio of the image */
+  margin-top: 1%;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+footer p {
+  margin: 10px 0;
+  margin-top: 70px;
+}
+
+.social-media-links a {
+  margin: 0 10px;
+  color: #333; /* Change color as needed */
+}
+
+.social-media-links a i {
+  font-size: 24px; /* Adjust size as needed */
+}
+
+/* Optional: Hover effect for icons */
+.social-media-links a:hover {
+  color: #555; /* Change hover color as needed */
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212; /* Example dark background */
+    color: #fff; /* Light text for dark background */
+  }
+
+  footer {
+    background-color: #1a1a1a; /* Darker background for footer in dark mode */
+    color: #fff;
+  }
+
+  .social-media-links a {
+    color: #fff; /* Light color for icons in dark mode */
+    /* background-color: red; */
+  }
+
+  /* Optional: Different hover effect color for dark mode */
+  .social-media-links a:hover {
+    color: #ccc; /* Lighter color on hover in dark mode */
+  }
+}
+
+.main-container {
+  max-width: 70%; /* 90% of the viewport width */
+  margin: 0 auto; /* Center the container */
+  overflow: hidden; /* Clear floats if necessary */
+}
+
+/* Optional: Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .main-container {
+    max-width: 90%; /* Full width on smaller screens */
+    padding: 0 10px; /* Optional padding for better spacing */
+  }
 }
